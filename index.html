@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fullstack Hello World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="status-badge">
+      <span class="pulse-dot"></span>
+      <span id="status-text">Client Ready</span>
+    </div>
+
+    <h1 id="greeting">Hello, World!</h1>
+    <p class="subtitle">A fullstack-ready starter application</p>
+
+    <div class="interactive-panel">
+      <label for="name-input">Enter your name:</label>
+      <div class="input-group">
+        <input type="text" id="name-input" placeholder="Type something..." autocomplete="off" />
+        <button id="send-btn">Send Request</button>
+      </div>
+    </div>
+
+    <div class="response-box">
+      <div class="response-header">
+        <span>Mock Server Response</span>
+        <span id="latency-tag">-- ms</span>
+      </div>
+      <pre><code id="json-output">{ "message": "Waiting for request..." }</code></pre>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
